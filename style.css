@@ -1,0 +1,58 @@
+body{
+	margin: 0px;
+}
+
+
+.header{
+	display: flex;
+	flex-direction: row;
+	gap: 24px;
+	align-items: center;
+	justify-content: center;
+}
+
+.header > span{
+	font-size: 24px;
+	color: black;
+}
+
+@media (max-width: 400px){
+	.header{
+		font-size: 16px;
+	}
+
+	.header > span{
+		flex-direction:column;
+	}
+}
+
+@media (prefers-color-scheme: dark){
+	.header{
+		background: var(--background-color);
+	}
+
+	.header > span{
+		color: var(--main-color);
+	}
+}
+
+:root{
+	--background-color: #000000;
+	--main-color: #ffffff;
+}
+
+
+
+div{
+	display: flex;
+	padding: 24px;
+	gap: 24px;
+	background: #dddddd;
+}
+
+
+span{
+	font-family: sans-serif;
+	font-size: 32px;
+	text-transform: uppercase;
+}
